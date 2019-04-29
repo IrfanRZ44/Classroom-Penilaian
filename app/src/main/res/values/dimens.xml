@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_font">17sp</dimen>
+    <dimen name="text_font">14sp</dimen>
+
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_standard">10dp</dimen>
+    <dimen name="margin_standard_big">15dp</dimen>
+    <dimen name="margin_big">20dp</dimen>
+
+    <dimen name="margin_elevation">8dp</dimen>
+
+    <dimen name="width70">70dp</dimen>
+    <dimen name="height40">40dp</dimen>
+    <dimen name="width_img30">30dp</dimen>
+
+</resources>

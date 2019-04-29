@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.exomatik.irfanrz.penilaian">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/penilaian"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/penilaian"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".Activity.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Authentication.register.registerUser"
+            />
+        <activity
+            android:name=".MainActivity"
+            />
+        <activity
+            android:name=".Authentication.login.loginUser"
+            />
+        <activity android:name=".Activity.Menu" />
+        <activity android:name=".Activity.KelasMHS">
+        </activity>
+
+        <activity android:name=".Activity.TambahMahasiswa" />
+        <activity android:name=".Activity.TambahPenilaian" />
+        <activity android:name=".Activity.ScanQR" />
+        <activity android:name=".Activity.GenerateQr" />
+        <activity android:name=".Activity.KelasMasukMhs" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="dab265d447c59d4fa283413fcbd75dee808cbcdc" />
+    </application>
+
+</manifest>

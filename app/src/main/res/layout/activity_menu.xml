@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putihGelap1"
+    tools:context="com.exomatik.irfanrz.penilaian.Activity.Menu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin_small">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_standard"
+                    >
+                    <io.supercharge.shimmerlayout.ShimmerLayout
+                        android:id="@+id/shimmer_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        app:shimmer_animation_duration="1200"
+                        android:layout_margin="@dimen/margin_standard"
+                        android:background="@drawable/border_rl_gray_pinggir"
+                        android:elevation="8dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_small"
+                            >
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@color/background"
+                                android:id="@+id/img1"
+                                />
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="25dp"
+                                android:src="@color/background"
+                                android:layout_toRightOf="@+id/img1"
+                                android:id="@+id/img4"
+                                android:layout_marginTop="@dimen/margin_standard"
+                                android:layout_marginLeft="@dimen/margin_standard"
+                                />
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="25dp"
+                                android:src="@color/background"
+                                android:layout_toRightOf="@+id/img1"
+                                android:layout_below="@+id/img4"
+                                android:id="@+id/img5"
+                                android:layout_marginTop="@dimen/margin_standard"
+                                android:layout_marginLeft="@dimen/margin_standard"
+                                />
+
+
+                        </RelativeLayout>
+
+                    </io.supercharge.shimmerlayout.ShimmerLayout>
+                    <io.supercharge.shimmerlayout.ShimmerLayout
+                        android:id="@+id/shimmer_text2"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        app:shimmer_animation_duration="1200"
+                        android:layout_margin="@dimen/margin_standard"
+                        android:background="@drawable/border_rl_gray_pinggir"
+                        android:elevation="8dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_small"
+                            >
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@color/background"
+                                android:id="@+id/amg1"
+                                />
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="25dp"
+                                android:src="@color/background"
+                                android:layout_toRightOf="@+id/amg1"
+                                android:id="@+id/amg4"
+                                android:layout_marginTop="@dimen/margin_standard"
+                                android:layout_marginLeft="@dimen/margin_standard"
+                                />
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="25dp"
+                                android:src="@color/background"
+                                android:layout_toRightOf="@+id/amg1"
+                                android:layout_below="@+id/amg4"
+                                android:id="@+id/amg5"
+                                android:layout_marginTop="@dimen/margin_standard"
+                                android:layout_marginLeft="@dimen/margin_standard"
+                                />
+
+
+                        </RelativeLayout>
+
+                    </io.supercharge.shimmerlayout.ShimmerLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/text_gagal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_big"
+                    android:text="Koneksi Gagal"
+                    android:textColor="@color/hitam"
+                    android:textSize="@dimen/text_font"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_rl_putih"
+                        android:elevation="4dp"
+                        android:padding="@dimen/margin_standard">
+
+                        <TextView
+                            android:id="@+id/text_kelas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Dashboard"
+                            android:textColor="@color/hitam"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/text_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/text_kelas"
+                            android:layout_marginLeft="@dimen/margin_standard"
+                            android:layout_marginTop="@dimen/margin_standard"
+                            android:text="Nama : "
+                            android:textColor="@color/hitam"
+                            android:textSize="@dimen/text_font" />
+
+                        <TextView
+                            android:id="@+id/text_jumlah"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/text_desc"
+                            android:layout_marginLeft="@dimen/margin_standard"
+                            android:layout_marginTop="@dimen/margin_standard"
+                            android:text="Jumlah Kelas yang di Miliki    : "
+                            android:textColor="@color/hitam"
+                            android:textSize="@dimen/text_font" />
+
+                        <TextView
+                            android:id="@+id/text_jumlah2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/text_jumlah"
+                            android:layout_marginLeft="@dimen/margin_standard"
+                            android:layout_marginTop="@dimen/margin_standard"
+                            android:text="Jumlah Kelas yang di Masuki : "
+                            android:textColor="@color/hitam"
+                            android:textSize="@dimen/text_font" />
+
+                        <TextView
+                            android:id="@+id/et_nama"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text_kelas"
+                            android:layout_marginLeft="@dimen/margin_standard"
+                            android:layout_marginTop="@dimen/margin_standard"
+                            android:layout_toRightOf="@+id/text_desc"
+                            android:singleLine="true"
+                            android:textColor="@color/hitam"
+                            android:textSize="@dimen/text_font" />
+
+                        <TextView
+                            android:id="@+id/et_jumlah"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text_desc"
+                            android:layout_marginLeft="@dimen/margin_standard"
+                            android:layout_marginTop="@dimen/margin_standard"
+                            android:layout_toRightOf="@+id/text_jumlah"
+                            android:singleLine="true"
+                            android:textColor="@color/hitam"
+                            android:textSize="@dimen/text_font" />
+
+                        <TextView
+                            android:id="@+id/et_jumlah2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/et_jumlah"
+                            android:layout_marginLeft="@dimen/margin_standard"
+                            android:layout_marginTop="@dimen/margin_standard"
+                            android:layout_toRightOf="@+id/text_jumlah2"
+                            android:singleLine="true"
+                            android:textColor="@color/hitam"
+                            android:textSize="@dimen/text_font" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_kelas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_profile"
+                        android:layout_marginTop="@dimen/margin_standard"
+                        android:background="@drawable/border_rl_blue"
+                        android:padding="@dimen/margin_small"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/text_milik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Kelas Yang Di Miliki"
+                            android:textColor="@color/putih"
+                            android:textSize="@dimen/title_font" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rc_kelas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text_milik"
+                            android:layout_marginTop="@dimen/margin_small"></android.support.v7.widget.RecyclerView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_kelas2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_kelas"
+                        android:layout_marginTop="@dimen/margin_standard"
+                        android:background="@drawable/border_rl_blue"
+                        android:padding="@dimen/margin_small"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/text_milik2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Kelas Yang Di Masuki"
+                            android:textColor="@color/putih"
+                            android:textSize="@dimen/title_font" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rc_kelas2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text_milik2"
+                            android:layout_marginTop="@dimen/margin_small"></android.support.v7.widget.RecyclerView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_jumlah_milik"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_kelas2"
+                        android:layout_marginTop="@dimen/margin_standard"
+                        android:background="@drawable/border_rl_biru"
+                        android:padding="@dimen/margin_standard">
+
+                        <ImageView
+                            android:id="@+id/img_tambah"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/margin_standard"
+                            android:src="@drawable/ic_tambah_white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="Buat Kelas"
+                            android:textColor="@color/putih"
+                            android:textSize="@dimen/text_font" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_jumlah_masuk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_jumlah_milik"
+                        android:layout_marginTop="@dimen/margin_standard"
+                        android:background="@drawable/border_rl_biru"
+                        android:padding="@dimen/margin_standard">
+
+                        <ImageView
+                            android:id="@+id/img_masuk"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/btn_generate" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="Masuk Kelas"
+                            android:textColor="@color/putih"
+                            android:textSize="@dimen/text_font" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/img_logout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/margin_small"
+        android:src="@drawable/log_off" />
+</RelativeLayout>
